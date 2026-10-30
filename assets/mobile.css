@@ -1,0 +1,226 @@
+/* Small-screen composition. Shares the Light/Dark tokens in design.css. */
+@media (max-width: 760px) {
+  html { -webkit-text-size-adjust:100%; scroll-padding-top:88px; }
+  .landing-page .welcome-hero { padding-block:35px 32px; gap:30px; }
+  .landing-page .welcome-hero h1 { font-size:clamp(36px,8.8vw,49px); line-height:1.17; letter-spacing:-1.8px; margin:20px 0; }
+  .welcome-hero .hero-description { font-size:14px; line-height:1.85; }
+  .hero-visual { padding:0; }
+  .hero-visual:before { inset:0; transform:none; border-radius:12px; }
+  .hero-visual .record-preview { box-shadow:var(--ui-shadow); }
+  .visual-caption { text-align:center; font-size:8px; letter-spacing:1px; padding-top:14px; }
+  .product-tour { padding-block:36px; gap:26px; }
+  .tour-copy h2 { font-size:28px; line-height:1.35; }
+  .tour-copy>p:not(.eyebrow) { font-size:13px; margin-top:16px; }
+  .tour-points b { font-size:13px; }
+  .tour-points span { font-size:12px; }
+  .principles { gap:13px; }
+  .principles p { font-size:12px; }
+  .approach-grid p,.process-steps p,.policy-section>div:last-child p { font-size:13px; }
+  .approach-grid h3 { font-size:19px; }
+  .feature-detail { font-size:11px; }
+  .faq-list summary { font-size:14px; min-height:44px; padding-block:8px; }
+  .faq-list details p,.landing-faq>div:first-child>p:last-child { font-size:13px; }
+  .landing-footer nav { flex-wrap:wrap; gap:8px 21px; }
+  .landing-footer nav a { display:inline-flex; align-items:center; min-height:44px; font-size:12px; }
+  .landing-footer p,.landing-footer>span { font-size:11px; }
+  .share-settings .snapshot-style { flex-direction:column; min-height:66px; padding:10px 4px; gap:8px; font-size:12px; }
+  .share-settings .snapshot-control-heading { flex-direction:row; gap:12px; align-items:baseline; }
+  .share-settings .snapshot-control-heading>span { font-size:11px; }
+  .share-settings .snapshot-interactions { margin-top:12px; }
+}
+
+@media (max-width: 620px) {
+  .nav,.landing-page .nav {
+    padding:12px max(18px,env(safe-area-inset-right)) 12px max(18px,env(safe-area-inset-left));
+    gap:10px;
+  }
+  .landing-page .wordmark,.wordmark { font-size:27px; }
+  .appearance-control select { width:88px; min-height:44px; font-size:12px; }
+  .landing-links .btn { font-size:11px; min-height:44px; padding-inline:11px; }
+  .landing-container { padding-inline:22px; }
+  .welcome-hero .hero-actions { display:grid; grid-template-columns:1fr; gap:6px; margin-top:23px; }
+  .hero-actions .btn { width:100%; min-height:49px; font-size:13px; padding:14px 18px; justify-content:space-between; }
+  .hero-actions .hero-secondary { border:0; justify-content:center; min-height:44px; font-size:12px; }
+  .welcome-hero .hero-footnote { font-size:11px; margin-top:8px; }
+  .welcome-hero .independent-notice { font-size:11px; line-height:1.85; margin-top:10px; }
+  .welcome-hero .eyebrow { font-size:9px; letter-spacing:1.15px; }
+  .hero-visual .preview-score strong { font-size:54px; }
+  .hero-visual .preview-score p { font-size:12px; }
+  .hero-visual .preview-score div>span { font-size:11px; }
+  .hero-visual .preview-top { font-size:9px; padding:16px 18px; letter-spacing:.6px; }
+  .hero-visual .example-label { font-size:9px; }
+  .hero-visual .preview-standing h2 { font-size:21px; }
+  .hero-visual .preview-standing p { font-size:12px; }
+  .hero-visual .preview-course { font-size:11px; margin-inline:18px; padding-block:13px; grid-template-columns:minmax(0,1fr) 38px 24px; gap:8px; }
+  .hero-visual .preview-course>span:nth-child(2) { font-size:10px; }
+  .hero-visual .preview-bottom { font-size:10px; padding-inline:18px; }
+  .planning-example { padding:23px; }
+  .example-heading { font-size:9px; }
+  .example-target { padding:18px; }
+  .example-equation div>span { font-size:11px; line-height:1.7; }
+  .example-caption { font-size:12px; }
+  .approach-grid article { padding:23px; }
+  .process-layout,.policy-section { padding-block:35px; }
+  .process-steps li { gap:15px; }
+  .process-steps h3 { font-size:16px; }
+  :root[data-theme] .landing-cta { padding:26px; gap:18px; }
+  .landing-cta h2 { font-size:25px; }
+  .landing-cta p:last-child { font-size:12px; }
+  .landing-cta .btn { width:100%; justify-content:space-between; min-height:48px; font-size:13px; }
+
+  /* Get to the grade fields without a long introductory dashboard. */
+  .shell { padding:23px 18px 22px; }
+  .intro { background:transparent; border:0; border-bottom:1px solid var(--ui-border); border-radius:0; padding:0 0 19px; margin-bottom:16px; }
+  .intro:before { display:none; }
+  .intro h1 { font-size:clamp(27px,7.1vw,33px); margin:12px 0 11px; line-height:1.25; }
+  .intro .sub { font-size:12px; line-height:1.85; }
+  .intro .eyebrow { font-size:8px; letter-spacing:.85px; }
+  .workspace-nav { margin-bottom:22px; gap:8px; }
+  .workspace-nav a { min-height:44px; display:flex; align-items:center; justify-content:center; padding:9px 7px; font-size:12px; }
+  .start-heading { margin-bottom:12px; }
+  .start-heading h2 { font-size:18px; }
+  .start-heading p { font-size:12px; line-height:1.7; }
+  .start-choices { gap:10px; }
+  :root[data-theme] .start-choice { padding:16px 18px; gap:6px; border-radius:9px; }
+  .start-choice strong { font-size:15px; line-height:1.6; }
+  .start-choice .choice-tag { font-size:9px; }
+  .start-choice>span:not(.choice-tag),.start-choice .choice-action { display:none; }
+  .start-here { margin-bottom:18px; }
+  .start-here+.independent-notice { font-size:10px; margin-bottom:20px!important; }
+  .layout { gap:18px; }
+  .panelhead { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:9px; padding:18px; }
+  .panelhead>div { min-width:0; }
+  .panelhead h2 { font-size:18px; line-height:1.4; }
+  .panelhead .btn { min-height:44px; font-size:11px; padding-inline:10px; }
+  .section-kicker { font-size:8px; letter-spacing:.9px; line-height:1.7; margin-bottom:4px; }
+  .entry-help { font-size:12px; line-height:1.9; padding:16px 18px; }
+  .entry-help>span { font-size:11px; }
+  .entry-help .saved { font-size:11px; }
+  .toolbar { gap:12px; padding:13px 18px; }
+  .semester-picker { flex:1; min-width:0; }
+  .semester-picker select { width:100%; max-width:none; font-size:16px; min-height:46px; }
+  .toolbar .textbtn { flex-shrink:0; font-size:11px; min-height:44px; }
+  .records tbody { padding:0 14px; }
+  .records tr { border:1px solid var(--ui-border); border-radius:10px; padding:16px 13px; margin:14px 0; background:var(--ui-raised); gap:14px 12px; }
+  .records td:nth-child(2):before,.records td:nth-child(3):before { font-size:12px; }
+  :root[data-theme] :is(input,select,textarea),.records td :is(input,select) { font-size:16px; min-height:48px; }
+  :root[data-theme] input[type=checkbox] { min-height:0; width:20px; height:20px; }
+  .records .termnote { font-size:11px; margin-top:8px; }
+  .records td:nth-child(4) { font-size:12px; min-height:44px; }
+  .records td:nth-child(4):before { font-size:11px; }
+  .records .remove { min-height:44px; min-width:44px; }
+  .tablefoot { padding:16px 18px; gap:10px; }
+  .tablefoot .btn { width:100%; min-height:48px; font-size:13px; }
+  .tablefoot .helper { width:100%; font-size:11px; text-align:center; }
+  .record-legend { font-size:11px; line-height:1.85; padding:14px 18px; }
+  .empty { padding:26px 18px; }
+  .empty strong { font-size:16px; }
+  .empty p { font-size:12px; }
+  .empty .textbtn { font-size:12px; min-height:44px; }
+  .feature-disclosure>summary { min-height:82px; padding:18px; }
+  .feature-disclosure>summary b { font-size:14px; line-height:1.6; }
+  .feature-disclosure>summary small { font-size:12px; }
+  .disclosure-plus { flex-shrink:0; }
+  .summary .honor p,.summary .gwalabel,.summary .stat span { font-size:12px; }
+  :root[data-theme] .summary .btn { min-height:48px; font-size:12px; }
+  .sharehint { font-size:11px; }
+  .degree-progress { margin-top:18px; padding:22px; }
+  .degree-progress h3 { font-size:19px; }
+  .degree-progress label { font-size:12px; }
+  .degree-progress>.helper,.degree-progress .progress-note,.progress-settings .helper { font-size:12px; }
+  .progress-settings summary { font-size:12px; min-height:44px; padding-block:9px; }
+  .progress-result .helper,.progress-numbers>span,.progress-unit-stats { font-size:11px; }
+  .checkrow label { font-size:13px; }
+  .checkrow small,.assessment-intro p,.assessment-item,.assessment-note { font-size:12px; }
+  .checkrow select { font-size:16px; }
+  .fullrecord { font-size:12px; }
+  .planner-body>.helper,.planner-result,.guide summary,.guide details p,.guide details li { font-size:12px; }
+  .guide summary { min-height:44px; padding-block:4px; }
+  .tools { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .tools .btn { font-size:11px; min-height:46px; padding-inline:8px; }
+  .tools .danger { grid-column:1/-1; justify-self:end; min-height:44px; font-size:12px; }
+
+  /* Dialogs fit the viewport and keep their close control reachable. */
+  :root[data-theme] dialog,#shareDialog,#scenarioDialog,.quick-dialog {
+    width:calc(100% - 16px); max-height:calc(100vh - 16px); max-height:calc(100dvh - 16px);
+    padding:16px 16px calc(20px + env(safe-area-inset-bottom)); border-radius:13px; overscroll-behavior:contain;
+  }
+  dialog .dialoghead,#shareDialog .dialoghead {
+    position:sticky; top:-16px; z-index:5; background:var(--ui-surface); padding:12px 0;
+    border-bottom:1px solid var(--ui-border); margin:-4px 0 18px;
+  }
+  .dialoghead h2,#shareDialog .dialoghead h2 { font-size:19px; line-height:1.5; letter-spacing:-.45px; }
+  .dialoghead .remove { flex:0 0 44px; width:44px; height:44px; }
+  dialog>.helper,.share-settings>.helper,.quick-dialog .helper { font-size:12px; }
+  .share-layout { gap:20px; }
+  #shareDialog .share-settings .fullrecord { font-size:12px; line-height:1.8; padding:13px; margin-top:16px; }
+  .share-settings .share-identity { padding-top:3px; }
+  .share-settings .snapshot-customizer { margin-top:18px; padding-top:17px; }
+  .share-settings .snapshot-interactions>span { font-size:11px; }
+  .share-settings .snapshot-interactions .textbtn { font-size:12px; min-height:44px; }
+  .share-canvas .actions { gap:10px; }
+  .share-canvas .actions .btn { font-size:12px; min-height:48px; white-space:normal; line-height:1.6; }
+  .share-canvas>.helper,.animation-status { font-size:11px; line-height:1.85; }
+  #sharePreview { padding:30px 22px 25px; }
+  #sharePreview .snapshot-fine { font-size:10px; }
+  #sharePreview .snapshot-badge { font-size:10px; padding:6px 10px; }
+  .future-fields { gap:14px; }
+  .future-course { padding:14px; }
+  .future-fields label { font-size:12px; }
+  .future-fields .optional { font-size:9px; }
+  .scenario-actions .textbtn { font-size:12px; min-height:44px; }
+  .scenario-result>p,.scenario-note { font-size:12px; }
+  .quick-row label,.quick-row-name { font-size:12px; }
+  .quick-row { gap:12px; }
+  .quick-row .remove { min-height:44px; min-width:32px; }
+  .notice-page { padding:30px 20px; }
+  .notice-page h1 { font-size:31px; line-height:1.3; }
+  .notice-article { padding:22px 18px; }
+  .notice-article p,.notice-article li { font-size:13px; }
+}
+
+@media (max-width: 380px) {
+  .nav,.landing-page .nav { padding-inline:16px; gap:7px; }
+  .landing-page .wordmark,.wordmark { font-size:25px; }
+  .appearance-control select { width:78px; padding-inline:9px; }
+  .landing-links .btn { font-size:10px; padding-inline:9px; }
+  .landing-container { padding-inline:20px; }
+  .landing-page .welcome-hero h1 { font-size:36px; letter-spacing:-1.5px; }
+  .welcome-hero .hero-description { font-size:13px; }
+  .example-equation { grid-template-columns:1fr; gap:11px; }
+  .example-equation>span { display:none; }
+  .example-equation>div { border-left:2px solid var(--ui-border); padding-left:12px; }
+  .panelhead h2 { font-size:17px; }
+  .share-settings .snapshot-control-heading { flex-direction:column; align-items:start; gap:4px; }
+  .share-settings .snapshot-style { font-size:11px; }
+  .scenario-comparison { grid-template-columns:1fr; gap:10px; }
+  .scenario-comparison>span { display:none; }
+  .scenario-comparison>div { display:flex; justify-content:space-between; align-items:center; gap:10px; }
+  .scenario-comparison div>span { max-width:90px; font-size:11px; }
+  .scenario-comparison strong { font-size:28px; white-space:nowrap; }
+}
+@media(max-width:620px){.nav>.btn{font-size:11px;min-height:44px;padding-inline:9px}:root[data-theme] .records input.include{width:24px;height:24px}}
+@media(max-width:620px){:root[data-theme] .appearance-control select{font-size:12px;min-height:44px}.shell{padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}.landing-container{padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}}
+/* Mobile navigation drawer: navigation and appearance without a crowded header. */
+.navigation-menu-button{display:none}
+#navigationDrawer{position:fixed;inset:0 0 0 auto;margin:0;width:min(350px,calc(100% - 28px));height:100vh;height:100dvh;max-height:100vh;max-height:100dvh;max-width:none;padding:0;border:0;border-left:1px solid var(--ui-border);border-radius:16px 0 0 16px;background:var(--ui-surface);color:var(--ui-text);overflow:hidden;box-shadow:-18px 0 65px #08192340}
+#navigationDrawer[open]{display:flex;flex-direction:column;animation:drawer-enter .2s ease-out both}
+#navigationDrawer::backdrop{background:#07182480;backdrop-filter:blur(3px)}
+.drawer-header{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-shrink:0;padding:calc(22px + env(safe-area-inset-top)) 23px 20px;border-bottom:1px solid var(--ui-border)}
+.drawer-header .wordmark{font-size:29px;line-height:1.2;display:block}.drawer-header h2{font-size:11px;font-weight:400;letter-spacing:0;color:var(--ui-muted);margin-top:6px}
+.drawer-close{display:grid;place-items:center;width:44px;height:44px;flex:0 0 44px;border:1px solid var(--ui-border);border-radius:8px;background:var(--ui-surface);color:var(--ui-text);font-size:27px;line-height:1}
+.drawer-close:hover{background:var(--ui-hover);border-color:var(--ui-accent)}
+.drawer-scroll{overflow-y:auto;overscroll-behavior:contain;min-height:0;flex:1;padding:22px 20px calc(24px + env(safe-area-inset-bottom));scrollbar-width:thin}
+.drawer-group-label{font-size:9px;letter-spacing:1.35px;color:var(--ui-muted);font-weight:500;margin:0 10px 10px}.drawer-secondary-label{margin-top:25px}
+.drawer-navigation{display:grid;gap:5px}.drawer-navigation a{display:flex;justify-content:space-between;align-items:center;gap:18px;min-height:48px;padding:12px 11px;border:1px solid transparent;border-radius:7px;font-size:14px;font-weight:500;text-decoration:none;line-height:1.6;color:var(--ui-text)}
+.drawer-navigation a>span:last-child{font-size:14px;color:var(--ui-muted)}.drawer-navigation a:hover{background:var(--ui-hover);border-color:var(--ui-border);color:var(--ui-text)}.drawer-navigation a[aria-current]{background:var(--ui-accent-soft);border-color:var(--ui-border);color:var(--ui-accent)}.drawer-navigation a[aria-current]>span:last-child{color:var(--ui-accent)}.drawer-secondary a{font-size:13px;font-weight:400;min-height:45px}
+.drawer-appearance{padding:21px 10px 0;margin-top:22px;border-top:1px solid var(--ui-border)}.drawer-appearance label{font-size:13px;font-weight:500;margin-bottom:4px}.drawer-appearance p{font-size:11px;color:var(--ui-muted);margin-bottom:13px}.drawer-appearance select{width:100%;font-size:16px;min-height:48px}
+.drawer-notice{font-size:11px;line-height:1.9;color:var(--ui-muted);padding:20px 10px 0}
+@keyframes drawer-enter{from{opacity:.5;transform:translateX(25px)}to{opacity:1;transform:translateX(0)}}
+@media(max-width:620px){
+ .nav .landing-links,.nav .navlinks,.nav>.btn,.nav>.appearance-control{display:none}
+ .navigation-menu-button{margin-left:auto;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-width:87px;min-height:44px;padding:10px 12px;border:1px solid var(--ui-border);border-radius:8px;background:var(--ui-surface);color:var(--ui-text);font-size:12px;line-height:1.5;font-weight:500}
+ .navigation-menu-button svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round}.navigation-menu-button:hover{background:var(--ui-hover);border-color:var(--ui-accent)}
+}
+@media(prefers-reduced-motion:reduce){#navigationDrawer[open]{animation:none}}
+@media print{.navigation-menu-button,#navigationDrawer{display:none!important}}

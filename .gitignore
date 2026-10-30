@@ -1,0 +1,10 @@
+dist/
+standalone/
+.vercel/
+node_modules/
+*.zip
+docs/screenshots/
+.env
+.env.*
+!.env.example
+*.log
